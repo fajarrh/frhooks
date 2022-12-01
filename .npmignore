@@ -1,6 +1,0 @@
-rollup.config.mjs
-.babelrc.json
-package-lock.json
-node_modules
-src
-.gitignore
