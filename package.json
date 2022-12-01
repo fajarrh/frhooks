@@ -1,10 +1,12 @@
 {
   "name": "frhooks",
-  "version": "1.0.0",
-  "description": "Hooks React",
-  "main": "src/index.js",
+  "version": "1.2.8",
+  "description": "Hook React",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -17,9 +19,26 @@
     "url": "https://github.com/fajarrh/frhooks/issues"
   },
   "homepage": "https://github.com/fajarrh/frhooks#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^23.0.3",
+    "@rollup/plugin-json": "^5.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.1.0",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "rollup-plugin-dts": "^5.0.0",
+    "tslib": "^2.4.1"
+  },
+  "files": [
+    "lib/**/*"
+  ],
   "peerDependencies": {
     "axios": "^1.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "yup": "^0.32.11"
   }
 }

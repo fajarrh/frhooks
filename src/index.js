@@ -1,3 +1,5 @@
-import useFecth from "./useFecth";
+import useFetch from "./hooks/useFetch";
+import useMutation from "./hooks/useMutation";
+export * from "./provider/HookContext";
 
-export { useFecth };
+export { useFetch, useMutation };
