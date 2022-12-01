@@ -1,4 +1,7 @@
+*.mjs
+*.config.mjs
+*.npmignore
+*.lock
+
 node_modules
 /src
-
-rollup.config.mjs
